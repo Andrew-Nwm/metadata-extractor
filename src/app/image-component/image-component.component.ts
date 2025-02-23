@@ -8,7 +8,7 @@ import * as ExifReader from 'exifreader';
   standalone: true,
   template: `
     <div class="container">
-      <h2>Extractor de Metadatos de Imagen - Desarrollado por Andrew-Dev</h2>
+      <h2>Extractor de Metadatos de Imagen - <span>Desarrollado por Andrew-Dev</span></h2>
       
       <div class="upload-box" 
            (dragover)="onDragOver($event)" 
@@ -68,6 +68,10 @@ import * as ExifReader from 'exifreader';
       max-width: 800px;
       margin: 20px auto;
       padding: 20px;
+    }
+
+    span{
+      color: #09f;
     }
 
     .upload-box {
