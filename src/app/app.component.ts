@@ -1,12 +1,10 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { ImageMetadataComponent } from './image-component/image-component.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  standalone: true,
+  imports: [ImageMetadataComponent],
+  template: '<app-image-metadata></app-image-metadata>'
 })
-export class AppComponent {
-  title = 'image-metadata-app';
-}
+export class AppComponent {}
