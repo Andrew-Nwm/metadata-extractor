@@ -8,7 +8,7 @@ import * as ExifReader from 'exifreader';
   standalone: true,
   template: `
     <div class="container">
-      <h2>Extractor de Metadatos de Imagen - <br><span>Desarrollado por Andres Rivas</span></h2>
+      <h2>Extractor de Metadatos de Imagen <br><span>Desarrollado por Andres Rivas</span></h2>
       
       <div class="upload-box" 
            (dragover)="onDragOver($event)" 
@@ -69,7 +69,7 @@ import * as ExifReader from 'exifreader';
 
 
 body {
-    font-family: 'Montserrat', 'Fira Code';
+    font-family: 'Montserrat', 'Fira Code', sans-serif;
 }
 
     .container {
@@ -116,6 +116,10 @@ body {
       border-radius: 8px;
       margin-top: 20px;
       box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    h2{
+      text-align: center;
     }
 
     h3 {
